@@ -36,9 +36,9 @@
             layers = <1>;
         };
 
-        right_command {
-            bindings = <&kp RIGHT_GUI>;
-            key-positions = <15 16 14>;
+        hyperkey {
+            bindings = <&sk LC(LA(LS(LEFT_GUI)))>;
+            key-positions = <19 20 21 22>;
             layers = <0>;
         };
     };
