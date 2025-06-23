@@ -38,7 +38,7 @@
 
         hyperkey {
             bindings = <&sk LC(LA(LS(LEFT_GUI)))>;
-            key-positions = <19 20 21 22>;
+            key-positions = <14 15 16>;
             layers = <0>;
         };
     };
