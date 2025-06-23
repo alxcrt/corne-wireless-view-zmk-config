@@ -99,9 +99,9 @@
 
             label = "BTH";
             bindings = <
-&to 0   &mmv MOVE_LEFT  &msc SCRL_RIGHT  &mmv MOVE_UP    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans      &bt BT_SEL 0  &trans
+&to 0   &msc SCRL_LEFT  &msc SCRL_RIGHT  &mmv MOVE_UP    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans      &bt BT_SEL 0  &trans
 &to 1   &trans          &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp LEFT_SHIFT     &trans  &mkp MB1        &mkp MB2    &trans      &bt BT_SEL 1  &trans
-&trans  &trans          &kp C_PLAY       &mmv MOVE_DOWN  &msc SCRL_UP       &kp LEFT_GUI       &trans  &trans          &trans      &bt BT_CLR  &bt BT_SEL 2  &trans
+&trans  &trans          &kp C_PLAY       &msc SCRL_DOWN  &msc SCRL_UP       &kp LEFT_GUI       &trans  &trans          &trans      &bt BT_CLR  &bt BT_SEL 2  &trans
                                          &trans          &trans             &trans             &trans  &trans          &trans
             >;
         };
