@@ -12,36 +12,41 @@
 #     shield: reviung41
 #
 # ---
-# include:
-#   - board: nice_nano_v2
-#     shield: corne_left nice_view_adapter nice_view
-#     snippet: studio-rpc-usb-uart
-#   - board: nice_nano_v2
-#     shield: corne_right nice_view_adapter nice_view
-#   - board: nice_nano_v2
-#     shield: settings_reset
-#   - board: seeeduino_xiao_ble
-#     shield: corne_dongle prospector_adapter
-#     snippet: studio-rpc-usb-uart
-
-
 include:
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: corne-dongle-left
-  - board: seeeduino_xiao_ble
+    snippet: studio-rpc-usb-uart
+  - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: corne-dongle-right
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
+    shield: settings_reset
+  - board: nice_nano_v2
     shield: corne_dongle dongle_screen
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     snippet: zmk-usb-logging
     artifact-name: corne-dongle-screen
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: settings_reset
-    artifact-name: totem-settings-reset
+    artifact-name: corne-settings-reset
+
+
+# include:
+#   - board: seeeduino_xiao_ble
+#     shield: corne_left nice_view_adapter nice_view
+#     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+#     artifact-name: corne-dongle-left
+#   - board: seeeduino_xiao_ble
+#     shield: corne_right nice_view_adapter nice_view
+#     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+#     artifact-name: corne-dongle-right
+#   - board: seeeduino_xiao_ble
+#     shield: corne_dongle dongle_screen
+#     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+#     snippet: zmk-usb-logging
+#     artifact-name: corne-dongle-screen
+#   - board: seeeduino_xiao_ble
+#     shield: settings_reset
+#     artifact-name: totem-settings-reset
 
 # resetfirmware
 # include:
